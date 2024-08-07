@@ -23,3 +23,9 @@ jobs:
 
     - name: Install package
       run: npx --verbose @blimmer/husky-npm-prepare-issue@latest
+
+    - name: cat package.json no matter what
+      if: always()
+      run: |
+        npm install --ignore-scripts @blimmer/husky-npm-prepare-issue@latest
+        cat node_modules/@blimmer/husky-npm-prepare-issue/package.json
