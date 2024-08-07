@@ -1,5 +1,8 @@
 {
   "name": "@blimmer/husky-npm-prepare-issue",
+  "publishConfig": {
+    "access": "public"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
