@@ -3,9 +3,9 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.1",
+  "version": "2.0.3",
   "bin": {
-    "blimmer-husky-npm-prepare-issue": "bin.js"
+    "husky-npm-prepare-issue": "./bin.js"
   },
   "scripts": {
     "postinstall": "husky",
