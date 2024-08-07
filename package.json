@@ -3,16 +3,14 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.3",
+  "version": "2.0.4",
   "bin": {
     "husky-npm-prepare-issue": "./bin.js"
   },
   "scripts": {
     "postinstall": "husky",
     "prepack": "pinst --disable",
-    "postpack": "pinst --enable",
-    "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable"
+    "postpack": "pinst --enable"
   },
   "keywords": [],
   "author": "Ben Limmer",
