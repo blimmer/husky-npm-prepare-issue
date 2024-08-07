@@ -1,0 +1,24 @@
+name: Test install
+
+on:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [20.10.0, 20.16.0, 22.5.1]
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Install package
+      run: npm install --verbose @blimmer/husky-npm-prepare-issue
