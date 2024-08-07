@@ -3,9 +3,10 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.1",
+  "bin": {
+    "blimmer-husky-npm-prepare-issue": "bin.js"
+  },
   "scripts": {
     "postinstall": "husky",
     "prepack": "pinst --disable",
